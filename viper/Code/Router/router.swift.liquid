@@ -1,5 +1,5 @@
 //
-//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
 //  {{ module_info.project_name }}
 //
 //  Created by {{ developer.name }} on {{ date }}.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class {{ module_info.name }}Router {
+class {{ prefix }}{{ module_info.name }}Router {
     weak var transitionHandler: UIViewController!
-    weak var presenter: {{ module_info.name }}Presenter!
+    weak var presenter: {{ prefix }}{{ module_info.name }}Presenter!
 }
 
-//MARK: - {{ module_info.name }}RouterInput
-extension {{ module_info.name }}Router: {{ module_info.name }}RouterInput {
+//MARK: - {{ prefix }}{{ module_info.name }}RouterInput
+extension {{ prefix }}{{ module_info.name }}Router: {{ prefix }}{{ module_info.name }}RouterInput {
 }

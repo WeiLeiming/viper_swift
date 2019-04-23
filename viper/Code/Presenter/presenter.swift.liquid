@@ -1,23 +1,23 @@
 //
-//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
 //  {{ module_info.project_name }}
 //
 //  Created by {{ developer.name }} on {{ date }}.
 //  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
 //
 
-typealias {{ module_info.name }}PresenterView = {{ module_info.name }}ViewOutput
-typealias {{ module_info.name }}PresenterInteractor = {{ module_info.name }}InteractorOutput
+typealias {{ prefix }}{{ module_info.name }}PresenterView = {{ prefix }}{{ module_info.name }}ViewOutput
+typealias {{ prefix }}{{ module_info.name }}PresenterInteractor = {{ prefix }}{{ module_info.name }}InteractorOutput
 
-class {{ module_info.name }}Presenter {
-    weak var view: {{ module_info.name }}ViewInput!
-    var interactor: {{ module_info.name }}InteractorInput!
-    var router: {{ module_info.name }}RouterInput!
-    var outer: {{ module_info.name }}ModuleOutput?
+class {{ prefix }}{{ module_info.name }}Presenter {
+    weak var view: {{ prefix }}{{ module_info.name }}ViewInput!
+    var interactor: {{ prefix }}{{ module_info.name }}InteractorInput!
+    var router: {{ prefix }}{{ module_info.name }}RouterInput!
+    var outer: {{ prefix }}{{ module_info.name }}ModuleOutput?
 }
 
-//MARK: - {{ module_info.name }}ViewOutput
-extension {{ module_info.name }}Presenter: {{ module_info.name }}PresenterView {
+//MARK: - {{ prefix }}{{ module_info.name }}ViewOutput
+extension {{ prefix }}{{ module_info.name }}Presenter: {{ prefix }}{{ module_info.name }}PresenterView {
     
     func subscribe() {
         interactor.startObserve()
@@ -29,6 +29,6 @@ extension {{ module_info.name }}Presenter: {{ module_info.name }}PresenterView {
     
 }
 
-// MARK: - {{ module_info.name }}InteractorOutput
-extension {{ module_info.name }}Presenter: {{ module_info.name }}PresenterInteractor {
+// MARK: - {{ prefix }}{{ module_info.name }}InteractorOutput
+extension {{ prefix }}{{ module_info.name }}Presenter: {{ prefix }}{{ module_info.name }}PresenterInteractor {
 }

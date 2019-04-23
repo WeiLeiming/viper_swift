@@ -10,13 +10,13 @@
 *  methods for communication PRESENTER -> VIEW
 
 */
-protocol {{ module_info.name }}ViewInput: class {
+protocol {{ prefix }}{{ module_info.name }}ViewInput: class {
 }
 
 /**
 *  methods for communication VIEW -> PRESENTER
 */
-protocol {{ module_info.name }}ViewOutput {
+protocol {{ prefix }}{{ module_info.name }}ViewOutput {
     func subscribe()
     func unsubscribe()
 }
@@ -24,7 +24,7 @@ protocol {{ module_info.name }}ViewOutput {
 /**
 *  methods for communication PRESENTER -> INTERACTOR
 */
-protocol {{ module_info.name }}InteractorInput {
+protocol {{ prefix }}{{ module_info.name }}InteractorInput {
     func startObserve()
     func stopObserve()
 }
@@ -32,11 +32,11 @@ protocol {{ module_info.name }}InteractorInput {
 /**
 *  methods for communication INTERACTOR -> PRESENTER
 */
-protocol {{ module_info.name }}InteractorOutput: class {
+protocol {{ prefix }}{{ module_info.name }}InteractorOutput: class {
 }
 
 /**
 *  methods for communication PRESENTER -> ROUTER
 */
-protocol {{ module_info.name }}RouterInput {
+protocol {{ prefix }}{{ module_info.name }}RouterInput {
 }

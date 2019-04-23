@@ -7,23 +7,23 @@
 //
 
 /**
-*  methods for communication OuterSide -> {{ module_info.name }}
-*  define the capabilities of {{ module_info.name }}
+*  methods for communication OuterSide -> {{ prefix }}{{ module_info.name }}
+*  define the capabilities of {{ prefix }}{{ module_info.name }}
 */
-public protocol {{ module_info.name }}ModuleInput: class {
+public protocol {{ prefix }}{{ module_info.name }}ModuleInput: class {
 }
 
 /**
-*  methods for communication {{ module_info.name }} -> OuterSide
+*  methods for communication {{ prefix }}{{ module_info.name }} -> OuterSide
 *  tell the caller what is changed
 */
-public protocol {{ module_info.name }}ModuleOutput: class {
+public protocol {{ prefix }}{{ module_info.name }}ModuleOutput: class {
 }
 
 /**
-*  default implement of {{ module_info.name }}ModuleOutput
+*  default implement of {{ prefix }}{{ module_info.name }}ModuleOutput
 *  empty implement for optional ops and
 *  fatalError make sure required ops
 */
-extension {{ module_info.name }}ModuleOutput {
+extension {{ prefix }}{{ module_info.name }}ModuleOutput {
 }

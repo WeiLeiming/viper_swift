@@ -6,12 +6,12 @@
 //  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
 //
 
-class {{ module_info.name }}Interactor {
-    weak var output: {{ module_info.name }}InteractorOutput?
+class {{ prefix }}{{ module_info.name }}Interactor {
+    weak var output: {{ prefix }}{{ module_info.name }}InteractorOutput?
 }
 
-// MARK: - {{ module_info.name }}InteractorInput
-extension {{ module_info.name }}Interactor: {{ module_info.name }}InteractorInput {
+// MARK: - {{ prefix }}{{ module_info.name }}InteractorInput
+extension {{ prefix }}{{ module_info.name }}Interactor: {{ prefix }}{{ module_info.name }}InteractorInput {
 
     func startObserve() {
     }

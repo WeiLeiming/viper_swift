@@ -1,5 +1,5 @@
 //
-//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
 //  {{ module_info.project_name }}
 //
 //  Created by {{ developer.name }} on {{ date }}.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class {{ module_info.name }}ViewController: UIViewController {
+class {{ prefix }}{{ module_info.name }}ViewController: UIViewController {
 
-    var output: {{ module_info.name }}ViewOutput!
+    var output: {{ prefix }}{{ module_info.name }}ViewOutput!
 
     // MARK: Life cycle
     override func viewDidLoad() {
@@ -29,10 +29,10 @@ class {{ module_info.name }}ViewController: UIViewController {
     
 }
 
-// MARK: - {{ module_info.name }}ViewInput
-extension {{ module_info.name }}ViewController: {{ module_info.name }}ViewInput {
+// MARK: - {{ prefix }}{{ module_info.name }}ViewInput
+extension {{ prefix }}{{ module_info.name }}ViewController: {{ prefix }}{{ module_info.name }}ViewInput {
 }
 
-//MARK: - {{ module_info.name }}ModuleInput
-extension {{ module_info.name }}ViewController: {{ module_info.name }}ModuleInput {
+//MARK: - {{ prefix }}{{ module_info.name }}ModuleInput
+extension {{ prefix }}{{ module_info.name }}ViewController: {{ prefix }}{{ module_info.name }}ModuleInput {
 }
