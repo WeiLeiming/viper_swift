@@ -11,6 +11,7 @@
 
 */
 protocol {{ prefix }}{{ module_info.name }}ViewInput: class {
+	func doDealErrorMessage(error: Error)
 }
 
 /**
@@ -33,6 +34,7 @@ protocol {{ prefix }}{{ module_info.name }}InteractorInput {
 *  methods for communication INTERACTOR -> PRESENTER
 */
 protocol {{ prefix }}{{ module_info.name }}InteractorOutput: class {
+	func dealErrorMessage(error: Error)
 }
 
 /**

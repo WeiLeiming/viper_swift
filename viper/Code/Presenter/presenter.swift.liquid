@@ -31,4 +31,9 @@ extension {{ prefix }}{{ module_info.name }}Presenter: {{ prefix }}{{ module_inf
 
 // MARK: - {{ prefix }}{{ module_info.name }}InteractorOutput
 extension {{ prefix }}{{ module_info.name }}Presenter: {{ prefix }}{{ module_info.name }}PresenterInteractor {
+
+    func dealErrorMessage(error: Error) {
+        view.doDealErrorMessage(error: error)
+    }
+
 }
