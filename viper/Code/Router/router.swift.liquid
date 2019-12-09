@@ -11,6 +11,14 @@ import UIKit
 class {{ prefix }}{{ module_info.name }}Router {
     weak var transitionHandler: UIViewController!
     weak var presenter: {{ prefix }}{{ module_info.name }}Presenter!
+
+    var viewController: {{ prefix }}{{ module_info.name }}ViewController {
+        return self.transitionHandler as! {{ prefix }}{{ module_info.name }}ViewController
+    }
+    
+    var navigationController: UINavigationController? {
+        return self.transitionHandler.navigationController
+    }
 }
 
 // MARK: - {{ prefix }}{{ module_info.name }}RouterInput
